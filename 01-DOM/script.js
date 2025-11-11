@@ -88,4 +88,4 @@ para querySelector y querySelectorAll hay que expecificar el tipo de selector.
   let subtitulo = document.getElementById("subtitulo")
   console.log(subtitulo.innerText);
   console.log(subtitulo.textContent);
-  console.log(subtitulo.innerHTML)
+  console.log(subtitulo.innerHTML);
