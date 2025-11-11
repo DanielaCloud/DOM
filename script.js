@@ -32,26 +32,60 @@ console.log(title[0].clasName);
 
 /* 
 
-Nodos de Atributo
+Nodos de atributo
 
-Son los nodos que accedemos a través de su clase o de su id.
+son lo s nodos que accedemos a traevez de su clase o su ID
 
-  document.getElementById("id");
-  document.getElementByClassName("clase");
+document.getElementById("id")
+document.getElementsByClassName(clase) //va a traer todas las coincidencias 
 
-Van a traer a la primera coincidencia.
+document.querySelector(nombreSelector);👉 selecciona la primera conincidencia
+document.querySelectorAll(nombreSelector);👉 selecciona todas las conincidencias
 
+
+para querySelector y querySelectorAll hay que expecificar el tipo de selector.
+
+  "nombre etiqueta" 👉 Si no lleva caracteres especiales selecciona etiquetas
+  ".nombreClase" 👉 Con un punto selecciona clases 
+  "#nombreId" 👉 con un numeral selecciona el ID
 */
 
-let parrafo = document.getElementById("puchunguito");
+//acceder a ID
+  let parrafo = document.getElementById("introduccion")
+  console.log(parrafo)
+  console.log(parrafo.innerText)
 
-console.log(parrafo);
-console.log(parrafo.innerText);
+//acceder a CLases
 
-let bullet = document.getElementsByClassName("bullet");
+  let bullet = document.getElementsByClassName("bullet")
+  console.log(bullet)
 
-console.log(bullet);
+  for(i = 0; i<bullet.length; i++) {
+    console.log(bullet[i].innerText)
+  }
 
-for(i = 0; i < bullet.length; i++) {
-  console.log(bullet [i].innerText);
-}
+// "Selector" para ID
+  let main = document.querySelector("#main")
+  console.log(main)
+
+
+  // "SelectorAll" para clases
+  let section = document.querySelectorAll(".section")
+  console.log(section)
+
+
+  /* 
+  
+  Nodo de texto
+
+  Las Propiedades que permiten acceder a el contenido de los elementos de Html.
+
+  nodo.innerText
+  nodo.textContent
+  
+  */
+
+  let subtitulo = document.getElementById("subtitulo")
+  console.log(subtitulo.innerText);
+  console.log(subtitulo.textContent);
+  console.log(subtitulo.innerHTML)
