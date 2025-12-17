@@ -52,5 +52,5 @@ button.addEventListener("click" , mostrarMensaje);
 function mostrarMensaje() {
   //Codigo que se ejecuta
 
-  alert(*Ya vamonos por favor!)
+  alert("Ya vamonos por favor!"); 
 }
